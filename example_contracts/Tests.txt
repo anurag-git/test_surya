@@ -1,0 +1,13 @@
+1. library defined in contract file
+2. library imported from weblink
+3. library imported from installed module
+3.1 handle multiple imports to compare library import file with using library name
+
+4. function with only one library function should work
+5. function with only 2 library function should show both functions
+5.1 works if both have ElementaryTypeName
+5.2 doesn't work if one is ElementaryTypeName and other UserDefinedTypeName(like struct member)
+6. function using struct having interger variable using library function is not showing like requestCount.add(1) and
+   aProposal.approvalCount = aProposal.approvalCount.add(1);
+	 basically not able to read user defined struct members
+7. signerCount.mul(100).div(2) ==> for this it detects only mul and not div
